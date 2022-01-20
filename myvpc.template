@@ -10,9 +10,9 @@ Metadata:
         'y': 80
       z: 1
       embeds:
-        - 9223b9cf-2779-48af-9094-f5debca37306
         - a2bb72e7-0eed-4920-829a-bc4667f78dcc
         - 47813190-11f2-45cf-8f82-465ecbcc1098
+        - 9223b9cf-2779-48af-9094-f5debca37306
         - fa3e887f-3536-4b2d-8a7c-045c135c19b0
         - b40b6808-fc51-4fd8-b724-fee7b67e1d09
         - cd7e88d5-cdda-4537-836f-cf73def8b971
@@ -28,9 +28,17 @@ Metadata:
       z: 2
       parent: 37672fb7-331d-413d-8cbe-9201e9a229bd
       embeds:
-        - fe70e34c-dcda-411d-b69b-7fef71efe492
+        - fb718433-cf35-46b1-bea4-8bfea06c88f9
+        - 37d0861c-13d6-45b7-968b-bc53a7143fe5
         - 518eb346-3d27-4300-b990-db657d88e6ba
       iscontainedinside:
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
@@ -170,9 +178,15 @@ Metadata:
         'y': 590
       z: 2
       parent: 37672fb7-331d-413d-8cbe-9201e9a229bd
-      embeds:
-        - 1c26cef3-76c3-4301-b41d-09c00ebc18b4
+      embeds: []
       iscontainedinside:
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
@@ -314,108 +328,6 @@ Metadata:
       parent: 37672fb7-331d-413d-8cbe-9201e9a229bd
       embeds:
         - 88fc9279-6275-442d-8a7e-f034925c033e
-      iscontainedinside:
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
-        - 37672fb7-331d-413d-8cbe-9201e9a229bd
     3cb65ab8-37f7-45b2-a1a7-884be9238a26:
       size:
         width: 60
@@ -438,6 +350,13 @@ Metadata:
       isassociatedwith:
         - 3cb65ab8-37f7-45b2-a1a7-884be9238a26
       iscontainedinside:
+        - 78332188-45f7-47f7-b035-7a8199e52293
+        - 78332188-45f7-47f7-b035-7a8199e52293
+        - 78332188-45f7-47f7-b035-7a8199e52293
+        - 78332188-45f7-47f7-b035-7a8199e52293
+        - 78332188-45f7-47f7-b035-7a8199e52293
+        - 78332188-45f7-47f7-b035-7a8199e52293
+        - 78332188-45f7-47f7-b035-7a8199e52293
         - 78332188-45f7-47f7-b035-7a8199e52293
         - 78332188-45f7-47f7-b035-7a8199e52293
         - 78332188-45f7-47f7-b035-7a8199e52293
@@ -579,6 +498,13 @@ Metadata:
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
     cd7e88d5-cdda-4537-836f-cf73def8b971:
       size:
         width: 60
@@ -596,6 +522,13 @@ Metadata:
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
     b40b6808-fc51-4fd8-b724-fee7b67e1d09:
       size:
         width: 60
@@ -607,6 +540,13 @@ Metadata:
       parent: 37672fb7-331d-413d-8cbe-9201e9a229bd
       embeds: []
       iscontainedinside:
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
@@ -702,81 +642,13 @@ Metadata:
         - acdb5288-eb09-405f-8c17-1dbb220456c3
         - acdb5288-eb09-405f-8c17-1dbb220456c3
         - acdb5288-eb09-405f-8c17-1dbb220456c3
-    1c26cef3-76c3-4301-b41d-09c00ebc18b4:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 1206.1577185223616
-        'y': 644.6898825537755
-      z: 3
-      parent: 9223b9cf-2779-48af-9094-f5debca37306
-      embeds: []
-      iscontainedinside:
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
-        - 9223b9cf-2779-48af-9094-f5debca37306
+        - acdb5288-eb09-405f-8c17-1dbb220456c3
+        - acdb5288-eb09-405f-8c17-1dbb220456c3
+        - acdb5288-eb09-405f-8c17-1dbb220456c3
+        - acdb5288-eb09-405f-8c17-1dbb220456c3
+        - acdb5288-eb09-405f-8c17-1dbb220456c3
+        - acdb5288-eb09-405f-8c17-1dbb220456c3
+        - acdb5288-eb09-405f-8c17-1dbb220456c3
     750d3d7e-882a-4f25-b900-3b7ee663ea8b:
       source:
         id: cd7e88d5-cdda-4537-836f-cf73def8b971
@@ -800,6 +672,13 @@ Metadata:
       parent: 37672fb7-331d-413d-8cbe-9201e9a229bd
       embeds: []
       iscontainedinside:
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
@@ -867,22 +746,37 @@ Metadata:
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
         - 37672fb7-331d-413d-8cbe-9201e9a229bd
-    fe70e34c-dcda-411d-b69b-7fef71efe492:
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+        - 37672fb7-331d-413d-8cbe-9201e9a229bd
+    37d0861c-13d6-45b7-968b-bc53a7143fe5:
       size:
         width: 60
         height: 60
       position:
-        x: 1400
+        x: 1630
         'y': 150
       z: 3
       parent: acdb5288-eb09-405f-8c17-1dbb220456c3
       embeds: []
-      iscontainedinside:
-        - acdb5288-eb09-405f-8c17-1dbb220456c3
-        - acdb5288-eb09-405f-8c17-1dbb220456c3
-        - acdb5288-eb09-405f-8c17-1dbb220456c3
-        - acdb5288-eb09-405f-8c17-1dbb220456c3
-        - acdb5288-eb09-405f-8c17-1dbb220456c3
+      isassociatedwith:
+        - fb718433-cf35-46b1-bea4-8bfea06c88f9
+    fb718433-cf35-46b1-bea4-8bfea06c88f9:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 1518.665181751949
+        'y': 149.4283591286927
+      z: 3
+      parent: acdb5288-eb09-405f-8c17-1dbb220456c3
+      embeds: []
+      isassociatedwith:
+        - 4e36da7c-f553-43fe-815b-11f5b6dc7126
 Resources:
   Vpc:
     Type: 'AWS::EC2::VPC'
@@ -1008,6 +902,7 @@ Resources:
       InstanceType: t3a.nano
       KeyName: !Ref KeyName
       SourceDestCheck: false
+      IamInstanceProfile: !Ref NatInstanceProfile
       Tags:
         - Key: Name
           Value: NatInstance
@@ -1078,6 +973,31 @@ Resources:
     Metadata:
       'AWS::CloudFormation::Designer':
         id: a2bb72e7-0eed-4920-829a-bc4667f78dcc
+  NatInstanceProfile:
+    Type: 'AWS::IAM::InstanceProfile'
+    Properties:
+      Roles:
+        - !Ref SsmIamRole
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 37d0861c-13d6-45b7-968b-bc53a7143fe5
+  SsmIamRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - ec2.amazonaws.com
+            Action:
+              - 'sts:AssumeRole'
+      ManagedPolicyArns:
+        - 'arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: fb718433-cf35-46b1-bea4-8bfea06c88f9
 Parameters:
   KeyName:
     Description: Amazon EC2 Key Pair
