@@ -3,7 +3,7 @@ Resources:
   Vpc:
     Type: 'AWS::EC2::VPC'
     Properties:
-      CidrBlock: 10.0.0.0/16
+      CidrBlock: !Ref VpcCidr
   PublicSubnet:
     Type: 'AWS::EC2::Subnet'
     Properties:
@@ -12,7 +12,7 @@ Resources:
         - 0
         - !GetAZs
           Ref: AWS::Region
-      CidrBlock: 10.0.0.0/24
+      CidrBlock: !Ref PublicSubnetCidr
       MapPublicIpOnLaunch: true
       Tags:
         - Key: Name
@@ -134,7 +134,7 @@ Resources:
         - 0
         - !GetAZs
           Ref: AWS::Region
-      CidrBlock: 10.0.1.0/24
+      CidrBlock: !Ref PrivateSubnet1Cidr
       Tags:
         - Key: Name
           Value: PrivateSubnet1
@@ -143,10 +143,10 @@ Resources:
     Properties:
       VpcId: !Ref Vpc
       AvailabilityZone: !Select
-        - 2
+        - 1
         - !GetAZs
           Ref: AWS::Region
-      CidrBlock: 10.0.2.0/24
+      CidrBlock: !Ref PrivateSubnet2Cidr
       Tags:
         - Key: Name
           Value: PrivateSubnet2
@@ -155,10 +155,10 @@ Resources:
     Properties:
       VpcId: !Ref Vpc
       AvailabilityZone: !Select
-        - 3
+        - 2
         - !GetAZs
           Ref: AWS::Region
-      CidrBlock: 10.0.3.0/24
+      CidrBlock: !Ref PrivateSubnet3Cidr
       Tags:
         - Key: Name
           Value: PrivateSubnet3
@@ -185,3 +185,23 @@ Parameters:
   KeyName:
     Description: Amazon EC2 Key Pair
     Type: 'AWS::EC2::KeyPair::KeyName'
+  VpcCidr:
+    Description: 'VPC CIDR'
+    Type: String
+    Default: '10.0.0.0/16'
+  PublicSubnetCidr:
+    Description: 'Public Subnet CIDR'
+    Type: String
+    Default: '10.0.0.0/24'
+  PrivateSubnet1Cidr:
+    Description: 'Private Subnet1 CIDR'
+    Type: String
+    Default: '10.0.1.0/24'
+  PrivateSubnet2Cidr:
+    Description: 'Private Subnet2 CIDR'
+    Type: String
+    Default: '10.0.2.0/24'
+  PrivateSubnet3Cidr:
+    Description: 'Private Subnet3 CIDR'
+    Type: String
+    Default: '10.0.3.0/24'
