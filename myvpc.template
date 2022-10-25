@@ -1,9 +1,43 @@
 AWSTemplateFormatVersion: 2010-09-09
+
+Parameters:
+  KeyName:
+    Description: Amazon EC2 Key Pair
+    Type: 'AWS::EC2::KeyPair::KeyName'
+  VpcCidr:
+    Description: 'VPC CIDR'
+    Type: String
+    Default: '10.0.0.0/16'
+  PublicSubnetCidr:
+    Description: 'Public Subnet CIDR'
+    Type: String
+    Default: '10.0.0.0/24'
+  PrivateSubnet1Cidr:
+    Description: 'Private Subnet1 CIDR'
+    Type: String
+    Default: '10.0.1.0/24'
+  PrivateSubnet2Cidr:
+    Description: 'Private Subnet2 CIDR'
+    Type: String
+    Default: '10.0.2.0/24'
+  PrivateSubnet3Cidr:
+    Description: 'Private Subnet3 CIDR'
+    Type: String
+    Default: '10.0.3.0/24'
+
 Resources:
   Vpc:
     Type: 'AWS::EC2::VPC'
     Properties:
       CidrBlock: !Ref VpcCidr
+  Igw:
+    Type: 'AWS::EC2::InternetGateway'
+    Properties: {}
+  VpcGatewayAttachment:
+    Type: 'AWS::EC2::VPCGatewayAttachment'
+    Properties:
+      InternetGatewayId: !Ref Igw
+      VpcId: !Ref Vpc
   PublicSubnet:
     Type: 'AWS::EC2::Subnet'
     Properties:
@@ -13,30 +47,93 @@ Resources:
         - !GetAZs
           Ref: AWS::Region
       CidrBlock: !Ref PublicSubnetCidr
-      MapPublicIpOnLaunch: true
+      MapPublicIpOnLaunch: false
       Tags:
         - Key: Name
           Value: PublicSubnet
-  Igw:
-    Type: 'AWS::EC2::InternetGateway'
-    Properties: {}
-  VpcGatewayAttachment:
-    Type: 'AWS::EC2::VPCGatewayAttachment'
+  PrivateSubnet1:
+    Type: 'AWS::EC2::Subnet'
     Properties:
-      InternetGatewayId: !Ref Igw
       VpcId: !Ref Vpc
-  Route:
+      AvailabilityZone: !Select
+        - 0
+        - !GetAZs
+          Ref: AWS::Region
+      CidrBlock: !Ref PrivateSubnet1Cidr
+      MapPublicIpOnLaunch: false
+      Tags:
+        - Key: Name
+          Value: PrivateSubnet1
+  PrivateSubnet2:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      VpcId: !Ref Vpc
+      AvailabilityZone: !Select
+        - 1
+        - !GetAZs
+          Ref: AWS::Region
+      CidrBlock: !Ref PrivateSubnet2Cidr
+      MapPublicIpOnLaunch: false
+      Tags:
+        - Key: Name
+          Value: PrivateSubnet2
+  PrivateSubnet3:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      VpcId: !Ref Vpc
+      AvailabilityZone: !Select
+        - 2
+        - !GetAZs
+          Ref: AWS::Region
+      CidrBlock: !Ref PrivateSubnet3Cidr
+      MapPublicIpOnLaunch: false
+      Tags:
+        - Key: Name
+          Value: PrivateSubnet3
+  PublicRouteTable:
+    Type: 'AWS::EC2::RouteTable'
+    Properties:
+      VpcId: !Ref Vpc
+  PublicSubnetRouteTableAssociation:
+    Type: 'AWS::EC2::SubnetRouteTableAssociation'
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      SubnetId: !Ref PublicSubnet
+  PublicRoute:
     Type: 'AWS::EC2::Route'
     Properties:
-      RouteTableId: !Ref RouteTable
+      RouteTableId: !Ref PublicRouteTable
       GatewayId: !Ref Igw
       DestinationCidrBlock: 0.0.0.0/0
     DependsOn:
       - VpcGatewayAttachment
-  RouteTable:
+  PrivateRouteTable:
     Type: 'AWS::EC2::RouteTable'
     Properties:
       VpcId: !Ref Vpc
+  PrivateSubnet1RouteTableAssociation:
+    Type: 'AWS::EC2::SubnetRouteTableAssociation'
+    Properties:
+      RouteTableId: !Ref PrivateRouteTable
+      SubnetId: !Ref PrivateSubnet1
+  PrivateSubnet2RouteTableAssociation:
+    Type: 'AWS::EC2::SubnetRouteTableAssociation'
+    Properties:
+      RouteTableId: !Ref PrivateRouteTable
+      SubnetId: !Ref PrivateSubnet2
+  PrivateSubnet3RouteTableAssociation:
+    Type: 'AWS::EC2::SubnetRouteTableAssociation'
+    Properties:
+      RouteTableId: !Ref PrivateRouteTable
+      SubnetId: !Ref PrivateSubnet3
+  PrivateRoute:
+    Type: 'AWS::EC2::Route'
+    Properties:
+      RouteTableId: !Ref PrivateRouteTable
+      InstanceId: !Ref NatInstance
+      DestinationCidrBlock: 0.0.0.0/0
+    DependsOn:
+      - VpcGatewayAttachment
   DmzSG:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
@@ -78,11 +175,6 @@ Resources:
       SecurityGroupEgress:
         - CidrIp: 0.0.0.0/0
           IpProtocol: -1
-  SubnetRouteTableAssociation:
-    Type: 'AWS::EC2::SubnetRouteTableAssociation'
-    Properties:
-      RouteTableId: !Ref RouteTable
-      SubnetId: !Ref PublicSubnet
   NatInstance:
     Type: 'AWS::EC2::Instance'
     Properties:
@@ -126,42 +218,6 @@ Resources:
       IpProtocol: tcp
       FromPort: 22
       ToPort: 22
-  PrivateSubnet1:
-    Type: 'AWS::EC2::Subnet'
-    Properties:
-      VpcId: !Ref Vpc
-      AvailabilityZone: !Select
-        - 0
-        - !GetAZs
-          Ref: AWS::Region
-      CidrBlock: !Ref PrivateSubnet1Cidr
-      Tags:
-        - Key: Name
-          Value: PrivateSubnet1
-  PrivateSubnet2:
-    Type: 'AWS::EC2::Subnet'
-    Properties:
-      VpcId: !Ref Vpc
-      AvailabilityZone: !Select
-        - 1
-        - !GetAZs
-          Ref: AWS::Region
-      CidrBlock: !Ref PrivateSubnet2Cidr
-      Tags:
-        - Key: Name
-          Value: PrivateSubnet2
-  PrivateSubnet3:
-    Type: 'AWS::EC2::Subnet'
-    Properties:
-      VpcId: !Ref Vpc
-      AvailabilityZone: !Select
-        - 2
-        - !GetAZs
-          Ref: AWS::Region
-      CidrBlock: !Ref PrivateSubnet3Cidr
-      Tags:
-        - Key: Name
-          Value: PrivateSubnet3
   NatInstanceProfile:
     Type: 'AWS::IAM::InstanceProfile'
     Properties:
@@ -181,27 +237,40 @@ Resources:
               - 'sts:AssumeRole'
       ManagedPolicyArns:
         - 'arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore'
-Parameters:
+
+Outputs:
   KeyName:
-    Description: Amazon EC2 Key Pair
-    Type: 'AWS::EC2::KeyPair::KeyName'
-  VpcCidr:
-    Description: 'VPC CIDR'
-    Type: String
-    Default: '10.0.0.0/16'
-  PublicSubnetCidr:
-    Description: 'Public Subnet CIDR'
-    Type: String
-    Default: '10.0.0.0/24'
-  PrivateSubnet1Cidr:
-    Description: 'Private Subnet1 CIDR'
-    Type: String
-    Default: '10.0.1.0/24'
-  PrivateSubnet2Cidr:
-    Description: 'Private Subnet2 CIDR'
-    Type: String
-    Default: '10.0.2.0/24'
-  PrivateSubnet3Cidr:
-    Description: 'Private Subnet3 CIDR'
-    Type: String
-    Default: '10.0.3.0/24'
+    Description: 'Amazon EC2 Key Pair'
+    Value: !Ref KeyName
+    Export:
+      Name: KeyName
+  PublicSubnet:
+    Description: 'Public Subnet'
+    Value: !Ref PublicSubnet
+    Export:
+      Name: PublicSubnet
+  PrivateSubnet1:
+    Description: 'Private Subnet1'
+    Value: !Ref PrivateSubnet1
+    Export:
+      Name: PrivateSubnet1
+  PrivateSubnet2:
+    Description: 'Private Subnet2'
+    Value: !Ref PrivateSubnet2
+    Export:
+      Name: PrivateSubnet2
+  PrivateSubnet3:
+    Description: 'Private Subnet3'
+    Value: !Ref PrivateSubnet3
+    Export:
+      Name: PrivateSubnet3
+  DmzSG:
+    Description: 'DMZ Security Group'
+    Value: !Ref DmzSG
+    Export:
+      Name: DmzSG
+  SecureSG:
+    Description: 'Secure Security Group'
+    Value: !Ref SecureSG
+    Export:
+      Name: SecureSG
