@@ -8,7 +8,10 @@ Resources:
     Type: 'AWS::EC2::Subnet'
     Properties:
       VpcId: !Ref Vpc
-      AvailabilityZone: ap-northeast-1a
+      AvailabilityZone: !Select
+        - 0
+        - !GetAZs
+          Ref: AWS::Region
       CidrBlock: 10.0.0.0/24
       MapPublicIpOnLaunch: true
       Tags:
@@ -89,7 +92,10 @@ Resources:
           DeviceIndex: '0'
           GroupSet:
             - !Ref NatSG
-      AvailabilityZone: ap-northeast-1a
+      AvailabilityZone: !Select
+        - 0
+        - !GetAZs
+          Ref: AWS::Region
       ImageId: ami-0973392a9c32dc651
       InstanceType: t3a.nano
       KeyName: !Ref KeyName
@@ -124,7 +130,10 @@ Resources:
     Type: 'AWS::EC2::Subnet'
     Properties:
       VpcId: !Ref Vpc
-      AvailabilityZone: ap-northeast-1a
+      AvailabilityZone: !Select
+        - 0
+        - !GetAZs
+          Ref: AWS::Region
       CidrBlock: 10.0.1.0/24
       Tags:
         - Key: Name
@@ -133,7 +142,10 @@ Resources:
     Type: 'AWS::EC2::Subnet'
     Properties:
       VpcId: !Ref Vpc
-      AvailabilityZone: ap-northeast-1c
+      AvailabilityZone: !Select
+        - 2
+        - !GetAZs
+          Ref: AWS::Region
       CidrBlock: 10.0.2.0/24
       Tags:
         - Key: Name
@@ -142,7 +154,10 @@ Resources:
     Type: 'AWS::EC2::Subnet'
     Properties:
       VpcId: !Ref Vpc
-      AvailabilityZone: ap-northeast-1d
+      AvailabilityZone: !Select
+        - 3
+        - !GetAZs
+          Ref: AWS::Region
       CidrBlock: 10.0.3.0/24
       Tags:
         - Key: Name
